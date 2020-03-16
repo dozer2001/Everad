@@ -1,0 +1,780 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.p-relative {
+    position: relative;
+}
+
+/*header*/
+.header {
+    background-image: url("../img/header/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    margin-bottom: 132px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__all-list {
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    z-index: 70;
+    background-color: white;
+    left: -284%;
+}
+
+.list__item {
+    list-style-type: none;
+    margin-bottom: 9px;
+}
+
+.show {
+    display: block;
+}
+
+.nav {
+    position: relative;
+
+}
+
+.top__all-list li {
+    margin-left: 40px;
+    cursor: pointer;
+    border-bottom: 1px dashed black;
+    font-family: "Roboto Regular";
+}
+
+.header__all-list li:first-child {
+    margin-left: 0;
+}
+
+.trigger {
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.header__left {
+    width: 470px;
+    z-index: 10;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 116px;
+}
+
+.header__title {
+    font-size: 42px;
+    color: #3b3944;
+    font-family: 'Robo Bold';
+    margin-bottom: 20px;
+}
+
+.header__sub-title {
+    font-size: 32px;
+    color: #4b69b0;
+    font-family: 'Roboto Medium';
+    margin-bottom: 50px;
+}
+
+.main__list-item {
+    font-size: 20px;
+    color: #3b3944;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.main__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.main__all-list li::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-top: 6px;
+    background: #4b69b0;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+
+.dot {
+    position: absolute;
+    top: 1px;
+    left: -6px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #4b69b0;
+    border-radius: 25px;
+}
+
+.woman {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 39%;
+    width: 34%;
+}
+
+.cream {
+    z-index: 0;
+    position: absolute;
+    bottom: -80px;
+    left: 34%;
+}
+
+.header__right {
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.right__container {
+    width: 225px;
+    margin: 25px 29px 30px 24px;
+
+}
+
+.right__title {
+    font-size: 28px;
+    color: #5774b8;
+    font-family: 'Robo Bold';
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.right__price {
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.old-price__title {
+    font-size: 13px;
+    color: #737e96;
+}
+
+.old-price__number {
+    margin-top: 19px;
+    align-items: center;
+}
+
+.old-price__number p {
+    font-size: 28px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.old-price__number p::before {
+    content: '';
+    position: absolute;
+    border-right: 1px solid red;
+    width: 4px;
+    height: 55px;
+    transform: rotate(69deg);
+    left: 25px;
+    top: -15px;
+    display: block;
+}
+
+.old-price__number p::after {
+    content: '';
+    position: absolute;
+    border-right: 1px solid red;
+    width: 4px;
+    height: 55px;
+    transform: rotate(-69deg);
+    left: 25px;
+    top: -10px;
+    display: block;
+}
+
+
+.new-price__title {
+    font-size: 13px;
+    color: #737e96;
+}
+
+.new-price__number {
+    color: #36bde3;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.new-price__number p {
+    font-size: 44px;
+    margin-right: 10px;
+}
+
+.and {
+    font-family: 'Roboto Medium';
+    font-size: 18px;
+    color: #5774b8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right__and-date {
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.right__and-date span {
+    color: #291d61;
+    font-size: 18px;
+    font-family: 'Roboto Regular';
+}
+
+.day {
+    font-size: 26px;
+    color: #000000;
+    border: 2px solid #ebf4f7;
+    border-radius: 50%;
+    padding: 9px 9px 10px 9px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #36bde3;
+    padding: 10px 55px 10px 55px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 0 0 #2d96cc;
+    outline: none;
+    border: none;
+}
+
+.btn p {
+    font-size: 25px;
+    font-family: 'Roboto Black';
+    color: #ffffff;
+}
+
+.btn span {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+/*header end*/
+
+/*symptoms*/
+.symptoms {
+    background-image: url("../img/symptoms/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 266px;
+}
+
+.orange {
+    color: #f56856;
+}
+
+.symptoms__title {
+    font-size: 33px;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Bold';
+    width: 840px;
+    margin: 86px auto;
+}
+
+.symptoms__all {
+    width: 699px;
+}
+
+.symptoms__all p {
+    font-size: 32px;
+    color: #2e2c35;
+    font-family: 'Roboto Bold';
+    margin-bottom: 23px;
+}
+
+.symptoms__all span {
+    font-size: 20px;
+    color: #7e7c89;
+    font-family: 'Roboto Regular';
+}
+
+.pain {
+    padding-left: 123px;
+    margin-bottom: 50px;
+}
+
+.pain::before {
+    content: '';
+    background-image: url("../img/symptoms/lightning.png");
+    width: 74px;
+    height: 74px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 21px;
+}
+
+.stiffness {
+    padding-left: 123px;
+    margin-bottom: 50px;
+}
+
+.stiffness::before {
+    content: '';
+    background-image: url("../img/symptoms/lock.png");
+    width: 74px;
+    height: 74px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 21px;
+}
+
+.edema {
+    padding-left: 123px;
+    margin-bottom: 50px;
+}
+
+.edema::before {
+    content: '';
+    background-image: url("../img/symptoms/leg.png");
+    width: 74px;
+    height: 74px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 21px;
+}
+
+.attention {
+    padding-left: 123px;
+    margin-top: 123px;
+    width: 392px;
+}
+
+.attention::before {
+    content: '';
+    background-image: url("../img/symptoms/exclamations.png");
+    width: 70px;
+    height: 102px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.attention .attention__text {
+    color: #3b3944;
+    font-family: 'Roboto Medium';
+}
+
+.symptoms__content img {
+    position: absolute;
+    top: 159px;
+    right: 57px;
+}
+
+/*end symptoms*/
+
+/*pantoflex start*/
+.blue {
+    color: #5774b8;
+}
+
+.pantoflex {
+    background-image: url("../img/pantoflex/pantoflex__bg.png");
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 181px;
+}
+
+.pantoflex__content {
+    padding-bottom: 35px;
+    padding-top: 44px;
+}
+
+.pantoflex__title {
+    font-size: 43px;
+    font-family: 'Roboto Bold';
+    margin-bottom: 38px;
+
+}
+
+.content__text {
+    margin-right: 26px;
+}
+
+.text-about {
+    color: #3b3944;
+    font-size: 25px;
+    font-family: 'Roboto Regular';
+    width: 699px;
+}
+
+.pantoflex__cream {
+    position: absolute;
+    right: 6%;
+    bottom: -25px;
+    z-index: 5;
+}
+
+.pantoflex__box {
+    position: absolute;
+    right: 17%;
+    top: -25px;
+    z-index: 0;
+}
+
+.content__text {
+    margin-bottom: 55px;
+}
+
+/*pantoflex end*/
+
+/*composition start*/
+
+.left__title {
+    font-size: 51px;
+    font-family: 'Roboto Bold';
+    margin-bottom: 16px;
+    width: 499px;
+}
+
+.composition__left img {
+    max-width: 470px;
+}
+
+.composition__right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 87px;
+}
+
+.right__item {
+    font-size: 24px;
+    font-family: 'Roboto Bold';
+    margin-bottom: 32px;
+    margin-left: 30px;
+    width: 270px;
+}
+
+.right__item:nth-child(2n+1) {
+    margin-left: 0;
+}
+
+.item__title {
+    margin-bottom: 15px;
+}
+
+.right__item img {
+    margin-bottom: 32px;
+    border-top: 3px solid #e0e9ee;
+    padding-top: 42px;
+}
+
+.composition__text {
+    color: #8e8c95;
+    font-size: 18px;
+    font-family: 'Roboto Regular';
+}
+
+/*composition end*/
+
+@media (max-width: 1170px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .woman {
+        bottom: 0;
+        width: 37%;
+    }
+
+    .cream {
+        width: 30%;
+        bottom: -7%;
+    }
+
+    .symptoms {
+        margin-bottom: 88px;
+    }
+
+    .symptoms__all {
+        width: 50%;
+    }
+
+    .symptoms__content img {
+        width: 40%;
+    }
+
+    .symptoms__title {
+        width: auto;
+        margin: 40px auto;
+        font-size: 25px;
+    }
+
+    .symptoms__item {
+        margin-top: 50px;
+    }
+
+    .text-about {
+        width: 50%;
+    }
+
+    .pantoflex {
+        background-size: cover;
+        margin-bottom: 84px;
+    }
+
+    .pantoflex__cream {
+        width: 20%;
+        bottom: 20%;
+    }
+
+    .pantoflex__box {
+        width: 20%;
+        right: 22%;
+        bottom: 20%;
+        top: auto;
+    }
+
+    .composition__content {
+        flex-direction: column;
+    }
+    .left__title{
+        width: auto;
+        font-size: 39px;
+    }
+    .composition__left img{
+        display: none;
+    }
+    .composition__left {
+        text-align: center;
+        margin-bottom: 35px
+    }
+    .composition__right{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 840px) {
+    .header {
+        margin-bottom: 54px;
+    }
+
+    .header__left {
+        width: auto;
+    }
+
+    .header__title {
+        font-size: 23px;
+        margin-bottom: 14px;
+    }
+
+    .header__sub-title {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .main__list-item {
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+
+    .woman {
+        display: none;
+    }
+
+    .cream {
+        left: 5%;
+        bottom: 11%;
+    }
+
+    .symptoms__title {
+        margin: 4px auto;
+    }
+
+    .symptoms__item {
+        margin-bottom: 25px;
+        padding-left: 94px;
+    }
+
+    .attention {
+        margin-top: 70px;
+        width: auto;
+    }
+
+    .symptoms__content img {
+        display: none;
+    }
+
+    .symptoms__all {
+        width: auto;
+    }
+
+    .pantoflex__title {
+        margin-bottom: 17px;
+    }
+
+    .content__text {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .trigger {
+        margin-top: 10px;
+    }
+
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        background: #222;
+        cursor: pointer;
+    }
+
+    .top__all-list {
+        display: none;
+    }
+    .right__item img{
+        margin-bottom: 7px;
+        padding-top: 14px;
+    }
+    .right__item{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 616px) {
+    .header {
+        background-size: cover;
+    }
+
+    .header__main {
+        display: block;
+    }
+
+    .header__right {
+        max-width: 264px;
+        margin: 0 auto;
+    }
+
+    .cream {
+        display: none;
+    }
+
+    .header__right {
+        padding: 2px 0;
+        margin-top: 20px;
+    }
+
+
+    .pantoflex__content {
+        text-align: center;
+    }
+
+    .text-about {
+        width: 90%;
+    }
+
+    .pantoflex__box {
+        display: none;
+    }
+
+    .pantoflex__cream {
+        display: none;
+    }
+    .left__title {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 420px) {
+    .symptoms__item {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .top__logo img {
+        width: 70%;
+    }
+
+    .header__title {
+        font-size: 16px;
+    }
+
+    .header__sub-title {
+        font-size: 20px;
+    }
+
+    .pain::before {
+        right: 0;
+        left: auto;
+        top: -14%;
+    }
+
+    .stiffness::before {
+        right: 0;
+        left: auto;
+        top: -14%;
+    }
+
+    .edema::before {
+        right: 0;
+        left: auto;
+        top: -14%;
+    }
+
+    .attention::before {
+        left: 34%;
+        top: -148%;
+    }
+
+    .attention {
+        margin-top: 113px;
+    }
+
+    .symptoms__title {
+        font-size: 20px;
+    }
+
+}
