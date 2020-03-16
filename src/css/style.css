@@ -32,6 +32,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
 
     margin-bottom: 132px;
 }
@@ -72,7 +73,8 @@ li {
     margin-left: 40px;
     cursor: pointer;
     border-bottom: 1px dashed black;
-    font-family: "Roboto Regular";
+    font-family: "Roboto";
+    font-weight: 400
 }
 
 .header__all-list li:first-child {
@@ -99,14 +101,16 @@ li {
 .header__title {
     font-size: 42px;
     color: #3b3944;
-    font-family: 'Robo Bold';
+    font-family: 'Roboto';
+    font-weight:700;
     margin-bottom: 20px;
 }
 
 .header__sub-title {
     font-size: 32px;
     color: #4b69b0;
-    font-family: 'Roboto Medium';
+    font-family: 'Roboto';
+    font-weight: 500;
     margin-bottom: 50px;
 }
 
@@ -171,7 +175,8 @@ li {
 .right__title {
     font-size: 28px;
     color: #5774b8;
-    font-family: 'Robo Bold';
+    font-family: 'Robo';
+    font-weight: 700;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -239,7 +244,8 @@ li {
 }
 
 .and {
-    font-family: 'Roboto Medium';
+    font-family: 'Roboto';
+    font-weight: 500;
     font-size: 18px;
     color: #5774b8;
     text-align: center;
@@ -255,7 +261,8 @@ li {
 .right__and-date span {
     color: #291d61;
     font-size: 18px;
-    font-family: 'Roboto Regular';
+    font-family: 'Robot';
+    font-weight: 400;
 }
 
 .day {
@@ -279,7 +286,8 @@ li {
 
 .btn p {
     font-size: 25px;
-    font-family: 'Roboto Black';
+    font-family: 'Roboto';
+    font-weight: 500;
     color: #ffffff;
 }
 
@@ -307,7 +315,8 @@ li {
     font-size: 33px;
     color: black;
     text-align: center;
-    font-family: 'Roboto Bold';
+    font-family: 'Roboto';
+    font-weight: 700;
     width: 840px;
     margin: 86px auto;
 }
@@ -319,7 +328,8 @@ li {
 .symptoms__all p {
     font-size: 32px;
     color: #2e2c35;
-    font-family: 'Roboto Bold';
+    font-family: 'Roboto';
+    font-weight: 700;
     margin-bottom: 23px;
 }
 
@@ -396,7 +406,8 @@ li {
 
 .attention .attention__text {
     color: #3b3944;
-    font-family: 'Roboto Medium';
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 .symptoms__content img {
@@ -426,9 +437,9 @@ li {
 
 .pantoflex__title {
     font-size: 43px;
-    font-family: 'Roboto Bold';
+    font-family: 'Roboto';
     margin-bottom: 38px;
-
+    font-weight: 700;
 }
 
 .content__text {
@@ -438,7 +449,8 @@ li {
 .text-about {
     color: #3b3944;
     font-size: 25px;
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto';
+    font-weight: 400;
     width: 699px;
 }
 
@@ -466,7 +478,8 @@ li {
 
 .left__title {
     font-size: 51px;
-    font-family: 'Roboto Bold';
+    font-family: 'Roboto';
+    font-weight: 700;
     margin-bottom: 16px;
     width: 499px;
 }
@@ -483,7 +496,8 @@ li {
 
 .right__item {
     font-size: 24px;
-    font-family: 'Roboto Bold';
+    font-family: 'Roboto';
+    font-weight: 700;
     margin-bottom: 32px;
     margin-left: 30px;
     width: 270px;
@@ -506,7 +520,8 @@ li {
 .composition__text {
     color: #8e8c95;
     font-size: 18px;
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 /*composition end*/
@@ -573,18 +588,22 @@ li {
     .composition__content {
         flex-direction: column;
     }
-    .left__title{
+
+    .left__title {
         width: auto;
         font-size: 39px;
     }
-    .composition__left img{
+
+    .composition__left img {
         display: none;
     }
+
     .composition__left {
         text-align: center;
         margin-bottom: 35px
     }
-    .composition__right{
+
+    .composition__right {
         justify-content: center;
     }
 
@@ -673,11 +692,13 @@ li {
     .top__all-list {
         display: none;
     }
-    .right__item img{
+
+    .right__item img {
         margin-bottom: 7px;
         padding-top: 14px;
     }
-    .right__item{
+
+    .right__item {
         margin-left: 0;
     }
 }
@@ -721,6 +742,7 @@ li {
     .pantoflex__cream {
         display: none;
     }
+
     .left__title {
         font-size: 29px;
     }
